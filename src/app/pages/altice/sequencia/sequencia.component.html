@@ -1,0 +1,19 @@
+<div class="content">
+    <mat-card >
+        <mat-form-field appearance="outline">
+            <mat-label>Sequência de Alticci</mat-label>
+            <input [(ngModel)]="numero" type="number" matInput placeholder="Digite um valor">
+        </mat-form-field>  
+
+        <button (click)="getSequenciaAltice()"  style="margin-left: 10px;"
+         mat-raised-button color="primary">Buscar</button>
+
+         <mat-label *ngIf="resposta != undefined" class="labelT">Sequencia de Alticci: {{resposta}}</mat-label>
+    </mat-card>
+   
+      
+   
+    
+</div>
+
+
